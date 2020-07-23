@@ -12,7 +12,7 @@
 
 선형 함수만을 이용해 Neural Net을 작성하면 정규화는 필요하지 않다. W와 b를 수정하면 같은 결과를 얻을 수 있다. 반면, 비선형 함수의 경우 다수의 중간층을 지나며 입력의 분포를 유지하지 못하게 되며 이러한 현상을 Internal Covariate Shift라고 한다. [1] 중간층을 지날수록 입력분포가 변화해 Gradient가 0과 같은 값으로 치우칠 확률이 높아지며, 학습능력과 정확도를 잃게 되는데, Normalization은 이러한 문제를 막기 위해 입력의 분포를 정규화하는 것이다.
 
-![nomalization](\image\nomalization.png) 
+![nomalization](image\nomalization.png) 
 
 <center>Internal Covriate Shift에 관한 사진 [3]</center>
 
