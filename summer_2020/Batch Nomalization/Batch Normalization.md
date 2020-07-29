@@ -12,7 +12,7 @@
 
 선형 함수만을 이용해 Neural Net을 작성하면 정규화는 필요하지 않다. W와 b를 수정하면 같은 결과를 얻을 수 있다. 반면, 비선형 함수의 경우 다수의 중간층을 지나며 입력의 분포를 유지하지 못하게 되며 이러한 현상을 Internal Covariate Shift라고 한다. [1] 중간층을 지날수록 입력분포가 변화해 Gradient가 0과 같은 값으로 치우칠 확률이 높아지며, 학습능력과 정확도를 잃게 되는데, Normalization은 이러한 문제를 막기 위해 입력의 분포를 정규화하는 것이다.
 
-![nomalization](\image\nomalization.png) 
+![nomalization](image/nomalization.png) 
 
 <center>Internal Covriate Shift에 관한 사진 [3]</center>
 
@@ -96,7 +96,7 @@ dx += dmean * (1 / N)
 
 
 
-한편 계산과정에서 cache의 mean과 x와 std가 만나 z가 되는데, 적당한 계산 노가다를 통해 $\frac{\partial L}{\partial std}$, $\frac{\partial mean}{\partial std}$을 계산하는 과정을 없애줄 수 있다. cs231n의 CIFAR-10을 이용한 Multi-Layer Neural Net 과제 실습에서 1.3배 정도의 속도 차이를 보였다.
+한편 계산과정에서 cache의 mean과 x와 std가 만나 z가 되는데, 적당한 계산 노가다를 통해 $\frac{\partial L}{\partial std}$, $\frac{\partial L}{\partial mean}$을 계산하는 과정을 없애줄 수 있다. cs231n의 CIFAR-10을 이용한 Multi-Layer Neural Net 과제 실습에서 1.3배 정도의 속도 차이를 보였다.
 
 ```python
 N = cache["x"].shape[0]
@@ -184,7 +184,7 @@ dx = dz / cache["std"] - cache["z"] * (1 / D) * np.array([(dz * cache["z"] / cac
 
 ##### 4.2. Batch Normalization에 대한 다른 설명
 
-Batch Normalization는 Internal Covariance Shift을 줄이는데 영향을 끼치지도 않으며, 그럼에도 불구하고 Batch Normalization이 효율적인 이유는 Loss의 Landscape가 부드러워지는 것이 근본적인 이유라는 연구[4]가 있다. Batch Normalization으로 인해 변한 Landscape는 Gradient가 보다 예측가능한 방향으로 움직여서, 발산하거나 포화상태가 되는 경우가 줄어들고, 큰 Learning Rate를 사용해도 안정적이게 된다고 한다.
+Batch Normalization는 Internal Covariance Shift을 줄이는데 영향을 끼치지도 않으며, 그럼에도 불구하고 Batch Normalization이 효율적인 이유는 Loss의 Landscape가 부드러워지기 때문이라는 연구[4]가 있다. Batch Normalization으로 인해 변한 Landscape는 Gradient가 보다 예측가능한 방향으로 움직여서, 발산하거나 포화상태가 되는 경우가 줄어들고, 큰 Learning Rate를 사용해도 안정적이게 된다고 한다.
 
 ![smoothness](\image\smoothness.png)
 
@@ -195,3 +195,4 @@ Batch Normalization는 Internal Covariance Shift을 줄이는데 영향을 끼�
 #### Reference
 
 [1] [Batch Normalization: Accelerating Deep Network Training b y Reducing Internal Covariate Shift](https://arxiv.org/pdf/1502.03167.pdf)<br>[2] [Normalization 설명](https://www.slideshare.net/ssuser06e0c5/normalization-72539464)<br>[3] [Batch Normalization 사진 및 설명](https://www.quora.com/Why-does-batch-normalization-help)<br>[4] [How Does Batch Normalization Help Optimization?](https://arxiv.org/pdf/1805.11604.pdf)<br>[5] [cs231n](http://cs231n.github.io)
+
