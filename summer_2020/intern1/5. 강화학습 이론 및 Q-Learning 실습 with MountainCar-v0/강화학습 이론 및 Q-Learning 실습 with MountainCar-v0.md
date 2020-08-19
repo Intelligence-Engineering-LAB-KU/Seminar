@@ -290,7 +290,7 @@ plt.show()
 
 
 
-![Q-Learning Reward](img/Q-Learning Reward.png)
+![Q-Learning_Reward](img/Q-Learning_Reward.png)
 
 
 
