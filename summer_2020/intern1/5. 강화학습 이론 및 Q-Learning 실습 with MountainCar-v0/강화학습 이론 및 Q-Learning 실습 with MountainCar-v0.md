@@ -288,6 +288,8 @@ plt.plot(reward_history)
 plt.show()
 ```
 
+
+
 ![Q-Learning Reward](img/Q-Learning Reward.png)
 
 
