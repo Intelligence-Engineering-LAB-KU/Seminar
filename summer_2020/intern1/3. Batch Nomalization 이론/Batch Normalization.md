@@ -32,7 +32,7 @@ $\mu=\frac{1}{N}\sum_{k=1}^{N}x_{k}$<br>$v=\frac{1}{N}\sum_{k=1}^{N}(x_{k}-\mu)^
 
 아래의 그림에서 확인할 수 있듯이, 각 데이터를 Feature-wise로 Nomalization하는 것도 특징이다. 이는 CNN 등에서 Spartial Information을 그대로 전달할 수 있게끔 한다.
 
-![Learning](\image\Learning.png)
+![Learning](image\Learning.png)
 
 전체 데이터가 아닌 mini-batch에 대해서만 Normalization을 진행하면, 한 Iteration에서 사용된 Mini-Batch에 관한 데이터만 Back Propagation에 작용하게 되며, 평균과 분산을 계산하는 과정이 신경망 안에 포함되기 때문에, Batch Normalization과 관련된 Parameter의 학습이 가능해져서 유리하다.
 
@@ -139,7 +139,7 @@ Batch Normalization을 제안한 논문[1]에서는 다음과 같은 방법들�
 
 15년도에 제안된 Batch Normalization가 좋아보이니, Batch가 아닌 다른 부분에도 정규화를 진행하자는 개념들이 제안되었다.
 
-![another](\image\another.png)
+![another](image\another.png)
 
 각자 나름의 특징과 장단점을 가지고 있으며, 구현은 거의 비슷하다. Layer Normalization의 구현만 살펴보자.
 
@@ -184,7 +184,7 @@ dx = dz / cache["std"] - cache["z"] * (1 / D) * np.array([(dz * cache["z"] / cac
 
 Batch Normalization는 Internal Covariance Shift을 줄이는데 영향을 끼치지도 않으며, 그럼에도 불구하고 Batch Normalization이 효율적인 이유는 Loss의 Landscape가 부드러워지기 때문이라는 연구[4]가 있다. Batch Normalization으로 인해 변한 Landscape는 Gradient가 보다 예측가능한 방향으로 움직여서, 발산하거나 포화상태가 되는 경우가 줄어들고, 큰 Learning Rate를 사용해도 안정적이게 된다고 한다.
 
-![smoothness](\image\smoothness.png)
+![smoothness](image\smoothness.png)
 
 
 
