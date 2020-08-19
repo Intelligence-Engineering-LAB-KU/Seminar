@@ -73,8 +73,6 @@ elif mode == "test":
 
 ##### 2.3. Back Propagation
 
-노가다의 연속이다.
-
 ```python
 N = cache["x"].shape[0]
 dz = dout * cache["gamma"] # (N, D)
