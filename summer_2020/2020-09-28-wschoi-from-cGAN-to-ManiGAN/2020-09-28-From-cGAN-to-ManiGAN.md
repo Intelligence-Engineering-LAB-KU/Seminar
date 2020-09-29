@@ -161,7 +161,7 @@ marp: true
 
 ---
 
-## Advanced 1: ManiGAN
+## Advanced 2: ManiGAN
 
 - Input: an input image $I$ and a text description $S'$
 - Output: a realistic image $I'$ that is semantically aligned with $S$
