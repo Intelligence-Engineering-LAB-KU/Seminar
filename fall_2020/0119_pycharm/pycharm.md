@@ -28,7 +28,7 @@
 
 1. git(VCS → get from version control --> github )
 
-   ![img](img/git_연동.PNG)
+   ![img](img/git_link.PNG)
 
 2. commit(ctrl + k)
 
