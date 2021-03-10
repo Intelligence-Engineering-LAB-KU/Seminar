@@ -14,7 +14,7 @@
 
 3. pytorch 설치 (pytorch 설치전 CUDA 11.0 driver를 먼저 설치해야합니다!)
 
-![image-20210115185734004](img/pytorch_install.png)
+![image-20210115185734004](img/pytorch_install.PNG)
 
 
 
