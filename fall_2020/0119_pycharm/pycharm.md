@@ -6,15 +6,15 @@
 
 1. [anaconda 설치](https://https://www.anaconda.com/products/individual#Downloads)
 
-![image-20210115185342798](./img/anaconda install)
+![image-20210115185342798](img/anaconda_install.PNG)
 
 2. anaconda 환경 구축 (pytorch 최신 버전을 받기 위해서는 python 3.7 이상 버전을 받아야합니다!!) 
 
-   ![image-20210115185734004](./img\conda env create)
+![image-20210115185734004](img/conda_env_create.PNG)
 
 3. pytorch 설치 (pytorch 설치전 CUDA 11.0 driver를 먼저 설치해야합니다!)
 
-![image-20210115185734004](./img/pytorch 설치.png)
+![image-20210115185734004](img/pytorch_install.png)
 
 
 
@@ -28,15 +28,15 @@
 
 1. git(VCS → get from version control --> github )
 
-   ![img](./img/git 연동.png)
+   ![img](img/git_연동.png)
 
 2. commit(ctrl + k)
 
-   ![image-20210118133225125](./img\git commit)
+   ![image-20210118133225125](img/git_commit.png)
 
 3. push
 
-   ![image-20210118133313931](./img\git push)
+   ![image-20210118133313931](img/git_push.png)
 
 ## [Wandb](https://wandb.ai)
 
@@ -70,5 +70,5 @@ wandb: Paste an API key from your profile and hit enter:
 
 4. wandb
 
-![image-20210118135737344](./img\wandb)
+![image-20210118135737344](img/wandb.png)
 
