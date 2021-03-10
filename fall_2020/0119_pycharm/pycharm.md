@@ -28,15 +28,15 @@
 
 1. git(VCS → get from version control --> github )
 
-   ![img](img/git_연동.png)
+   ![img](img/git_연동.PNG)
 
 2. commit(ctrl + k)
 
-   ![image-20210118133225125](img/git_commit.png)
+   ![image-20210118133225125](img/git_commit.PNG)
 
 3. push
 
-   ![image-20210118133313931](img/git_push.png)
+   ![image-20210118133313931](img/git_push.PNG)
 
 ## [Wandb](https://wandb.ai)
 
@@ -70,5 +70,5 @@ wandb: Paste an API key from your profile and hit enter:
 
 4. wandb
 
-![image-20210118135737344](img/wandb.png)
+![image-20210118135737344](img/wandb.PNG)
 
