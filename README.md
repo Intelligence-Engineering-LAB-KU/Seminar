@@ -1,10 +1,6 @@
 # Seminar
 
-2020 Intelligence Engineering Lab 여름 세미나
-
-![](https://imgur.com/e0sf0zJ.png)
-
-IELab 인턴 세미나로, stanford cs231n 수업을 기반으로 하되 주제는 자유선정하여 딥러닝 관련 기법을 톺아봅니다.
+2021 Intelligence Engineering Lab 여름 세미나
 
 ---
 
