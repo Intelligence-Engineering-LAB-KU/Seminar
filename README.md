@@ -1,6 +1,6 @@
 # Seminar
 
-2021 Intelligence Engineering Lab 여름 세미나
+Intelligence Engineering Lab 세미나
 
 ---
 
